@@ -1,7 +1,8 @@
 const Discord = require("discord.js");
+const db = require('quick.db');
 module.exports = {
     name:"addcredits",
-    async run (client, message, args, db) {
+     run: async(client, message, args) => {
         const ownerId = "حط ايديك هني" // this is my id but you wanna put your id here.
 
         if(message.author.id !== ownerId) {
@@ -26,3 +27,4 @@ module.exports = {
 
     }
 }
+//Made by Привет ⁞ 💘ֆ ⁽ʜɪᴇ ⁞ ⁾↵⇣℡#2000
