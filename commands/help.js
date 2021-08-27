@@ -6,7 +6,7 @@ module.exports = {
      
      message.channel.send(new Discord.MessageEmbed()
      .setColor('RED')
-                          .setTitle("information for commands")
+      .setTitle("information for commands")
      .setDescription(`/`credits/` Show your balance or somemone
      /`daily/`claim your daily reward
      /`trans/`transefr your balance to somemone`)
@@ -14,7 +14,5 @@ module.exports = {
        
     }
 }
-
-
 
 //Made by Привет ⁞ 💘ֆ ⁽ʜɪᴇ ⁞ ⁾↵⇣℡#2000
