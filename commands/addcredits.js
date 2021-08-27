@@ -1,8 +1,8 @@
 const Discord = require("discord.js");
 module.exports = {
-    name:"addmoney",
+    name:"addcredits",
     async run (client, message, args, db) {
-        const ownerId = "799629227715723294" // this is my id but you wanna put your id here.
+        const ownerId = "حط ايديك هني" // this is my id but you wanna put your id here.
 
         if(message.author.id !== ownerId) {
             return message.channel.send(`Sorry! Only the bot developer can use this command.`)
@@ -19,10 +19,10 @@ module.exports = {
             return message.channel.send(`That's not a number!`)
         }
         if(amount === "0")  {
-            return message.channel.send(`Why'd you give someone \`0\` coins??? 😂😂`)
+            return message.channel.send(`Why'd you give someone \`0\` credit??? 😂😂`)
         }
-        db.add(`money_${user.id}`, parseInt(amount))
-        message.channel.send(`Succesfully added \`${parseInt(amount)}\` coins to **${user.tag}**'s wallet!`)
+        db.add(`credit_${user.id}`, parseInt(amount))
+        message.channel.send(`Succesfully added \`${parseInt(amount)}\` credits to **${user.tag}**'s !`)
 
     }
 }
