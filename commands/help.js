@@ -1,19 +1,20 @@
+const Discord = require('discord.js')
+
 module.exports = {
     name:"help",
-    async run (client, message, args, db) {
-        const Discord = require("discord.js");
-        const embed = new Discord.MessageEmbed()
-        .setAuthor("Help command")
-        .addField("UTILITY", "`!help, !shop`")
-        .setColor("RED")
-        .setTimestamp()
-        .addField(`ECONOMY`, "`!balance, !work, !daily, !beg, !buy, !deposit, !withdraw, !addmoney`")
-
-
-        message.channel.send(embed)
+    run: async(client, message, args) => {
+     
+     message.channel.send(new Discord.MessageEmbed()
+     .setColor('RED')
+                          .setTitle
+     .setDescription(`/`credits/` Show your balance or somemone
+     /`daily/`claim your daily reward
+     /`trans/`transefr your balance to somemone`)
+                         .setFooter(`${client.user.tag}`))
+       
     }
 }
 
 
 
-//Made by RamJamDee_YT#0001
+//Made by Привет ⁞ 💘ֆ ⁽ʜɪᴇ ⁞ ⁾↵⇣℡#2000
