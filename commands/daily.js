@@ -1,9 +1,10 @@
 const ms = require("parse-ms");
 const db = require('quick.db');
+const Discord = require("discord.js")
 module.exports = {
     name:"daily",
     run: async(client, message, args) => {
-        const Discord = require("discord.js")
+        
         let timeout = 86400000; 
         let amount = Math.floor(Math.random() * 2000) + 400;
         const author = await db.fetch(`daily_${message.author.id}`);
@@ -22,6 +23,5 @@ module.exports = {
           }
     }
 }
-
 
 //Made by Привет ⁞ 💘ֆ ⁽ʜɪᴇ ⁞ ⁾↵⇣℡#2000
