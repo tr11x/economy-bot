@@ -16,7 +16,7 @@ module.exports = {
               .setColor("RED")
               .setTimestamp())
     
-              db.add(`money_${message.author.id}`, amount)
+              db.add(`credit_${message.author.id}`, amount)
               db.set(`daily_${message.author.id}`, Date.now())
             
           }
